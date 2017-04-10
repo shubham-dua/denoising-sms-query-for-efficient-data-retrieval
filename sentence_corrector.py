@@ -1,3 +1,9 @@
+# YOU NEED TO HAVE PYENCHANT MODULE INSTALLED ON YOUR DEVICE
+# AUTOCORRECTS A MULTIPLE WORD QUERY
+# DOES NOT CHECK GRAMMAR
+
+
+
 import enchant
 d = enchant.DictWithPWL("en_US")
 d1 = enchant.request_pwl_dict("faq_words.txt")
@@ -10,8 +16,6 @@ n =1
 
 length = len(y)
 output_list = []
-
-
 
 ##############FUNCTION TO CALCULATE LONGEST COMMON SUBSEQENCE#################
 
@@ -101,9 +105,6 @@ def lcs_func():
 
     #####################test code####################
 
-
-
-
     ####################################################
     output_list.append(lcs_words[mx])
 
@@ -135,10 +136,6 @@ if flag == True:
 for w in output_list:
     op = op + w + " "
 print op
-
-
-
-
 
 #############################          TOKENIZER        ###############################
 handler = open("stop_words.txt", "r")
